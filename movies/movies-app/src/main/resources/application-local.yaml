@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /api
+
+app:
+  security:
+    tmdb:
+      key: 81a868597b9ea5e43a04f4f192a97e3e
