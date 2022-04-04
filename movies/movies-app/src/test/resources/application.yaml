@@ -1,0 +1,8 @@
+server:
+  servlet:
+    context-path: /api
+
+app:
+  security:
+    tmdb:
+      key: foo

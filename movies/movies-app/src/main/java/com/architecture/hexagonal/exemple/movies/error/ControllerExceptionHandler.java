@@ -11,8 +11,8 @@ public class ControllerExceptionHandler {
     @ExceptionHandler(MoviesNotFoundException.class)
     public ResponseEntity<String> moviesNotFoundExceptionHandler(final MoviesNotFoundException moviesNotFoundException) {
         return ResponseEntity
-                .internalServerError()
-                .body(moviesNotFoundException.getMessage());
+                .noContent()
+                .build();
     }
 
     @ExceptionHandler(ParametersException.class)

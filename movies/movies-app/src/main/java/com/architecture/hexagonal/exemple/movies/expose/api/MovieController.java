@@ -7,6 +7,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -35,7 +36,7 @@ public class MovieController {
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Movie> getById(@PathParam("id") final String id) {
+    public ResponseEntity<Movie> getById(@PathVariable("id") final String id) {
         if (!StringUtils.hasText(id)) {
             throw new ParametersException("[id] parameter is mandatory");
         }
