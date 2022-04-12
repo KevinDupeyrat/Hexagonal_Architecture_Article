@@ -97,6 +97,9 @@
                     <targetTests>
                         <param>com.architecture.hexagonal.exemple.movies.*</param>
                     </targetTests>
+                    <mutators>
+                        <mutator>ALL</mutator>
+                    </mutators>
                 </configuration>
                 <dependencies>
                     <dependency>
