@@ -1,21 +1,19 @@
 package com.architecture.hexagonal.exemple.movies.domain.movies.model;
 
 import com.fasterxml.jackson.annotation.JsonCreator;
-import lombok.Getter;
-import lombok.RequiredArgsConstructor;
+import lombok.Value;
 
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 
-@Getter
-public final class Person {
-
+@Value
+public class Person {
     @NotNull
     @NotBlank
-    private final String name;
+    String name;
     @NotNull
     @NotBlank
-    private final String firstName;
+    String firstName;
 
     @JsonCreator
     public Person(String name, String firstName) {
