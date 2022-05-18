@@ -1,8 +1,8 @@
 package com.architecture.hexagonal.exemple.movies.infra.api.service;
 
+import com.architecture.hexagonal.exemple.movies.common.utils.DateTimeUtil;
 import com.architecture.hexagonal.exemple.movies.domain.movies.model.Movie;
 import com.architecture.hexagonal.exemple.movies.domain.movies.outbound.MoviesProvider;
-import com.architecture.hexagonal.exemple.movies.domain.utils.DateTimeUtil;
 import com.architecture.hexagonal.exemple.movies.infra.api.model.MovieDBFactory;
 import info.movito.themoviedbapi.TmdbMovies;
 import info.movito.themoviedbapi.model.MovieDb;

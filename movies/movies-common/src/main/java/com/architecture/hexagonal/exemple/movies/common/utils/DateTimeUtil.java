@@ -1,7 +1,6 @@
-package com.architecture.hexagonal.exemple.movies.domain.utils;
+package com.architecture.hexagonal.exemple.movies.common.utils;
 
 import lombok.experimental.UtilityClass;
-import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
 
 import java.time.LocalDate;

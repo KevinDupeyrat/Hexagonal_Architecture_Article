@@ -1,8 +1,7 @@
 package com.architecture.hexagonal.exemple.movies.infra.api.mapper;
 
+import com.architecture.hexagonal.exemple.movies.common.utils.DateTimeUtil;
 import com.architecture.hexagonal.exemple.movies.domain.movies.model.Movie;
-import com.architecture.hexagonal.exemple.movies.domain.utils.DateTimeUtil;
-import com.architecture.hexagonal.exemple.movies.infra.api.mapper.MovieMapper;
 import com.architecture.hexagonal.exemple.movies.infra.api.model.MovieDBFactory;
 import info.movito.themoviedbapi.model.MovieDb;
 import org.junit.jupiter.api.Test;

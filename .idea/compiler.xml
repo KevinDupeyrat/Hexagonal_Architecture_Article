@@ -8,23 +8,29 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="movies-app" />
-        <module name="movies-infra-api" />
         <module name="movies-domain" />
+        <module name="movies-infra-api" />
+        <module name="movies-common" />
+        <module name="movies-test-report" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="movies" target="17" />
       <module name="movies-app" target="17" />
+      <module name="movies-common" target="17" />
       <module name="movies-domain" target="17" />
       <module name="movies-infra-api" target="17" />
+      <module name="movies-test-report" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="movies" options="" />
+      <module name="movies" options="-parameters" />
       <module name="movies-app" options="-parameters" />
+      <module name="movies-common" options="-parameters" />
       <module name="movies-domain" options="-parameters" />
       <module name="movies-infra-api" options="-parameters" />
+      <module name="movies-test-report" options="-parameters" />
     </option>
   </component>
 </project>

@@ -1,4 +1,4 @@
-package com.architecture.hexagonal.exemple.movies.expose.api;
+package com.architecture.hexagonal.exemple.movies.expose.api.integration;
 
 import com.architecture.hexagonal.exemple.movies.DemoApplication;
 import com.architecture.hexagonal.exemple.movies.domain.movies.model.Movie;
@@ -20,6 +20,7 @@ import java.util.List;
 
 import static io.restassured.RestAssured.given;
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(SpringExtension.class)
@@ -196,5 +197,6 @@ class MovieIntegrationTest {
                 .get("/api/v1/movies/{id}");
         // then
         assertEquals(400, response.getStatusCode());
+        assertEquals("[id] parameter is mandatory", response.print());
     }
 }

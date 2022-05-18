@@ -15,8 +15,6 @@ import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.mockito.Mockito.times;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -40,7 +38,6 @@ class MoviesServiceTest {
         // when
         final List<Movie> result = moviesService.getPopulars();
         // then
-        verify(moviesProvider, times(1)).getPopulars();
         assertEquals(movies, result);
 
     }
@@ -52,8 +49,6 @@ class MoviesServiceTest {
         when(moviesProvider.getPopulars()).thenReturn(movies);
         // when - then
         assertThrows(MoviesNotFoundException.class, () -> moviesService.getPopulars());
-        // then
-        verify(moviesProvider, times(1)).getPopulars();
     }
 
     @Test
@@ -64,7 +59,6 @@ class MoviesServiceTest {
         // when
         final List<Movie> result = moviesService.getUpcoming();
         // then
-        verify(moviesProvider, times(1)).getUpcoming();
         assertEquals(movies, result);
     }
 
@@ -75,8 +69,6 @@ class MoviesServiceTest {
         when(moviesProvider.getUpcoming()).thenReturn(movies);
         // when - then
         assertThrows(MoviesNotFoundException.class, () -> moviesService.getUpcoming());
-        // then
-        verify(moviesProvider, times(1)).getUpcoming();
     }
 
     @Test
@@ -88,7 +80,6 @@ class MoviesServiceTest {
         // when
         final Movie result = moviesService.getById(id);
         // then
-        verify(moviesProvider, times(1)).getById(id);
         assertEquals(movie, result);
     }
 
@@ -103,7 +94,5 @@ class MoviesServiceTest {
                 assertThrows(MoviesNotFoundException.class, () -> moviesService.getById(id))
                         .getMessage()
         );
-        // then
-        verify(moviesProvider, times(1)).getById(id);
     }
 }
