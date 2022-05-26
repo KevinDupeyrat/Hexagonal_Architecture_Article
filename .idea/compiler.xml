@@ -25,7 +25,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="movies" options="-parameters" />
+      <module name="movies" options="" />
       <module name="movies-app" options="-parameters" />
       <module name="movies-common" options="-parameters" />
       <module name="movies-domain" options="-parameters" />

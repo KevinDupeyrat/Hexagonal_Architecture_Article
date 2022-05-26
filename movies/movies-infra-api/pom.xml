@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>movies</artifactId>
-        <groupId>com.architecture.hexagonal.exemple</groupId>
+        <groupId>com.architecture.hexagonal.example</groupId>
         <version>0.0.1-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
@@ -21,12 +21,12 @@
 
     <dependencies>
         <dependency>
-            <groupId>com.architecture.hexagonal.exemple</groupId>
+            <groupId>com.architecture.hexagonal.example</groupId>
             <artifactId>movies-domain</artifactId>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.architecture.hexagonal.exemple</groupId>
+            <groupId>com.architecture.hexagonal.example</groupId>
             <artifactId>movies-common</artifactId>
         </dependency>
         <dependency>

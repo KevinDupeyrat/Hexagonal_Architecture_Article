@@ -11,7 +11,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
-    <groupId>com.architecture.hexagonal.exemple</groupId>
+    <groupId>com.architecture.hexagonal.example</groupId>
     <artifactId>movies</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
@@ -37,22 +37,22 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.architecture.hexagonal.exemple</groupId>
+                <groupId>com.architecture.hexagonal.example</groupId>
                 <artifactId>movies-domain</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.architecture.hexagonal.exemple</groupId>
+                <groupId>com.architecture.hexagonal.example</groupId>
                 <artifactId>movies-infra-api</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.architecture.hexagonal.exemple</groupId>
+                <groupId>com.architecture.hexagonal.example</groupId>
                 <artifactId>movies-app</artifactId>
                 <version>${project.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.architecture.hexagonal.exemple</groupId>
+                <groupId>com.architecture.hexagonal.example</groupId>
                 <artifactId>movies-common</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -125,10 +125,10 @@
                     <version>1.7.5</version>
                     <configuration>
                         <targetClasses>
-                            <param>com.architecture.hexagonal.exemple.movies.*</param>
+                            <param>com.architecture.hexagonal.example.*</param>
                         </targetClasses>
                         <targetTests>
-                            <param>com.architecture.hexagonal.exemple.movies.*</param>
+                            <param>com.architecture.hexagonal.example.*</param>
                         </targetTests>
                         <mutators>
                             <mutator>ALL</mutator>

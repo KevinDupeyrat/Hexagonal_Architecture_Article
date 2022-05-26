@@ -153,7 +153,7 @@ For dependency of all infra, we'll have to importe the domain module with scope 
 <dependencies>
     ...
     <dependency>
-        <groupId>com.architecture.hexagonal.exemple</groupId>
+        <groupId>com.architecture.hexagonal.example</groupId>
         <artifactId>movies-domain</artifactId>
         <scope>provided</scope>
     </dependency>
@@ -168,12 +168,12 @@ and for the application module `movies-app`, we'll need to importe domain and al
 ...
 <dependencies>
     <dependency>
-        <groupId>com.architecture.hexagonal.exemple</groupId>
+        <groupId>com.architecture.hexagonal.example</groupId>
         <artifactId>movies-domain</artifactId>
         <scope>provided</scope>
     </dependency>
     <dependency>
-        <groupId>com.architecture.hexagonal.exemple</groupId>
+        <groupId>com.architecture.hexagonal.example</groupId>
         <artifactId>movies-infra-api</artifactId>
         <scope>runtime</scope>
     </dependency>
